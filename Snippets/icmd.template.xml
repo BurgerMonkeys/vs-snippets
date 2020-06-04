@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>icmd</Shortcut>
+      <_Description>Create ICommand with implementation</_Description>
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="name">
+        <Default>Name</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[public ICommand $name$Command => new Command(Executed$name$Command);
+private void Executed$name$Command()
+{
+}
+$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
